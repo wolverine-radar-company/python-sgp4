@@ -13,7 +13,8 @@ if sys.version_info[0] != 2 and os.environ.get('TRAVIS') == 'true':
 # It is hard to write C extensions that support both Python 2 and 3, so
 # we opt here to support the acceleration only for Python 3.
 ext_modules = []
-if sys.version_info[0] == 3:
+# if sys.version_info[0] == 3:
+if False:
     ext_modules.append(Extension(
         'sgp4.vallado_cpp',
         optional=optional,
